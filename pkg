@@ -1,6 +1,6 @@
 # obtain vlaue from apt show pkgname
-Package: zathura-pdf-poppler
+Package: xdg-utils
 Version: 99.9.9
 Maintainer: dummy
 Architecture: all
-Provides: pdf-viewer
+# Provides: pdf-viewer
