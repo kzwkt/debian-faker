@@ -1,6 +1,6 @@
-#change it
-Package: python
+# obtain vlaue from apt show pkgname
+Package: zathura-pdf-poppler
 Version: 99.9.9
 Maintainer: dummy
 Architecture: all
-Provides: python3:any , python3-minimal:any
+Provides: pdf-viewer
