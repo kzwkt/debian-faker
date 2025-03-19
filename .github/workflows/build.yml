@@ -4,30 +4,25 @@ on:
   push:
     paths:
       - 'PKGBUILD'
-  pull_request:
-    paths:
-      - 'PKGBUILD'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: archlinux:latest
+      image: debian:stable
     steps:
       - name: Install dependencies
         run: |
-          pacman -Sy --noconfirm base-devel
+          apt install -y equivs
 
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Run build/test commands
         run: |
-          useradd build
-          chown -R build .
-          su build -c 'makepkg -s'
-          PKGN=$(grep -Po "^pkgname=['\"]?\K[^'\"]+" PKGBUILD)
+          equivs-build pkg
+          PKGN=$(awk '/^Package:/ {print $2}' pkg)
           echo "PKG=${PKGN}" >> $GITHUB_ENV
-          FILE1=$(realpath $PKGN-99.1-1-any.pkg.tar.zst)
+          FILE1=$(realpath $PKGN-_99.9.9_all.deb)
           echo "FILE1=${FILE1}" >> $GITHUB_ENV
           
 
