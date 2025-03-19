@@ -24,7 +24,7 @@ jobs:
           equivs-build pkg
           PKGN=$(awk '/^Package:/ {print $2}' pkg)
           echo "PKG=${PKGN}" >> $GITHUB_ENV
-          FILE1=$(realpath $PKGN-_99.9.9_all.deb)
+          FILE1=$(realpath $PKGN_99.9.9_all.deb)
           echo "FILE1=${FILE1}" >> $GITHUB_ENV
           
 
