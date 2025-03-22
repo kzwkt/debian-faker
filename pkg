@@ -1,5 +1,5 @@
 # obtain vlaue from apt show pkgname
-Package: xdg-utils
+Package: xwayland
 Version: 99.9.9
 Maintainer: dummy
 Architecture: all
