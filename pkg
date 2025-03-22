@@ -1,6 +1,6 @@
 # obtain vlaue from apt show pkgname
-Package: xwayland
+Package: dconf-gsettings-backend
 Version: 99.9.9
 Maintainer: dummy
 Architecture: all
-# Provides: pdf-viewer
+Provides: gsettings-backend
