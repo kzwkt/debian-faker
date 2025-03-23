@@ -1,6 +1,6 @@
 # obtain vlaue from apt show pkgname
-Package: dconf-gsettings-backend
+Package: cpp
 Version: 99.9.9
 Maintainer: dummy
 Architecture: all
-Provides: gsettings-backend
+Provides: cpp-12
