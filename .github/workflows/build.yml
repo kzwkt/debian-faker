@@ -22,8 +22,7 @@ jobs:
       - name: Run build/test commands
         run: |
           equivs-build pkg
-          PKGN=$(awk '/^Package:/ {print $2}' pkg)
-          echo "PKG=${PKGN}" >> $GITHUB_ENV
+          echo "PKG=$(awk '/^Package:/ {print $2}' pkg)" >> $GITHUB_ENV
           FILE1=$(realpath "*.deb")
           echo "FILE1=${FILE1}" >> $GITHUB_ENV
           
