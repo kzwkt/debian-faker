@@ -1,6 +1,6 @@
 # obtain vlaue from apt show pkgname
 Package: polkitd
-Version: 99.9.9
+Version: 999-9
 Maintainer: dummy
 Architecture: all
 # Provides: cpp-12
