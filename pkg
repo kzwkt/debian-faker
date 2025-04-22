@@ -1,5 +1,5 @@
 # obtain vlaue from apt show pkgname
-Package: media-types
+Package: xfce4-helpers
 Version: 999-9
 Maintainer: dummy
 Architecture: all
