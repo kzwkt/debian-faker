@@ -1,5 +1,5 @@
 # obtain vlaue from apt show pkgname
-Package: polkitd
+Package: media-types
 Version: 999-9
 Maintainer: dummy
 Architecture: all
