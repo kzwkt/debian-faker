@@ -1,5 +1,5 @@
 # obtain vlaue from apt show pkgname
-Package: xfce4-helpers
+Package: x11-common
 Version: 999-9
 Maintainer: dummy
 Architecture: all
