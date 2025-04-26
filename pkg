@@ -1,6 +1,6 @@
 # obtain vlaue from apt show pkgname
 Package: x11-common
-Version: 999-9
+Version: 99.9.9
 Maintainer: dummy
 Architecture: all
 # Provides: cpp-12
