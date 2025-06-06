@@ -1,6 +1,6 @@
 # obtain vlaue from apt show pkgname
-Package: x11-common
-Version: 1:99-1
+Package: elogind
+Version: 1:999-1
 Maintainer: dummy
 Architecture: all
 # Provides: cpp-12
