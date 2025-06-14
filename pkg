@@ -1,6 +1,6 @@
 # obtain vlaue from apt show pkgname
-Package: elogind
+Package: xwayland
 Version: 1:999-1
 Maintainer: dummy
 Architecture: all
-Provides:  polkitd,logind, default-logind 
+#Provides:  polkitd,logind, default-logind 
